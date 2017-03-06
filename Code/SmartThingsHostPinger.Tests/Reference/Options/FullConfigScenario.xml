@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE root [
+  <!ENTITY accessToken "00000000-0000-0000-0000-000000000000">
+  <!ENTITY appId "00000000-0000-0000-0000-000000000000">
+  <!ENTITY ide "https://my.smartthings.endpoint.com:443">
+]>
+<config>
+  <pingSettings
+  checkInterval="2000" c="the interval is in seconds"
+  timeOut="2000" d="the interval is in milliseconds"
+  debug="true"
+	/>
+  <smartThingsEndpoints
+		accessToken="&accessToken;"
+    Online="&ide;/api/smartapps/installations/&appId;/statechanged/online"
+		Offline="&ide;/api/smartapps/installations/&appId;/statechanged/offline"
+	/>
+
+  <hostList>
+    <item HOST="google.com" />
+    <item HOST="192.168.1.1" />
+    <item HOST="SERVER1" />
+  </hostList>
+</config>

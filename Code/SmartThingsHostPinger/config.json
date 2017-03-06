@@ -1,0 +1,19 @@
+{
+    "Hosts": [
+        "google.com",
+        "192.168.1.1",
+        "SERVER1"
+    ],
+    "Debug": false,
+    "PingOptions": {
+        "PingIntervalSeconds": 30,
+        "TimeoutMilliseconds": 1000,
+        "RetryAttempts": 5
+    },
+    "SmartAppConfig": {
+        "Simulate": false,
+        "AccessToken": "ReplaceMe",
+        "AppId": "ReplaceMe",
+        "SmartThingsApiEndpoint": "https://graph-na02-useast1.api.smartthings.com:443"
+    }
+}

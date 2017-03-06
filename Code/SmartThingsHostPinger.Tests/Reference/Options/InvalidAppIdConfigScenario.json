@@ -1,0 +1,12 @@
+{
+  "Hosts": [
+    "google.com",
+    "192.168.1.1",
+    "SERVER1"
+  ],
+  "SmartAppConfig": {
+    "AccessToken": "00000000-0000-0000-0000-000000000000",
+    "AppId": "NOT-A-GUID",
+    "SmartThingsApiEndpoint": "https://my.smartthings.endpoint.com:443"
+  }
+}
