@@ -68,7 +68,7 @@ namespace SmartThingsHostPinger.Tests.Options
 			else
 			{
 				Assert.True(options.PingOptions.PingHostsConcurrently); // Not supported in Xml config
-				Assert.Equal(options.PingOptions.RetryAttempts, 5); // Not supported in Xml config
+				Assert.Equal(5, options.PingOptions.RetryAttempts); // Not supported in Xml config
 				Assert.False(options.SmartAppConfig.Simulate); // Not supported in Xml config
 			}
 			Assert.Equal(2000, options.PingOptions.PingIntervalSeconds);
