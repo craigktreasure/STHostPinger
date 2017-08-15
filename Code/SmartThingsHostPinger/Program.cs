@@ -13,14 +13,13 @@ namespace SmartThingsHostPinger
 		/// <summary>
 		/// Defines the entry point of the application.
 		/// </summary>
-		/// <param name="args">The arguments.</param>
-		private static void Main(string[] args)
+		private static void Main()
 		{
 			// Setup the logging.
 			LoggingLevelSwitch loggingSwitch = new LoggingLevelSwitch(LogEventLevel.Information);
 			Log.Logger = new LoggerConfiguration()
 				.MinimumLevel.ControlledBy(loggingSwitch)
-				.WriteTo.LiterateConsole(
+				.WriteTo.Console(
 					outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss} {Message}{NewLine}{Exception}",
 					restrictedToMinimumLevel: LogEventLevel.Information)
 				.WriteTo.Trace(restrictedToMinimumLevel: LogEventLevel.Debug)
